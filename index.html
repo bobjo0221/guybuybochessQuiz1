@@ -374,7 +374,7 @@ function buildAnswerDie(){
     if(Math.max(Math.abs(dx), Math.abs(dy)) < threshold) return;
     let dir;
     if(Math.abs(dx) > Math.abs(dy)) dir = dx > 0 ? 'E' : 'W';
-    else dir = dy > 0 ? 'S' : 'N';
+    else dir = dy > 0 ? 'N' : 'S';
     applySwipe(dir);
   });
   stage.addEventListener('pointercancel', function(){ dragging = false; });
